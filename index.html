@@ -342,6 +342,19 @@
 					margin-bottom: 30px;
 				}
 			}
+			.sr-only {
+				border: 0 !important;
+				clip: rect(1px, 1px, 1px, 1px) !important;
+				-webkit-clip-path: inset(50%) !important;
+				clip-path: inset(50%) !important;
+				height: 1px !important;
+				margin: -1px !important;
+				overflow: hidden !important;
+				padding: 0 !important;
+				position: absolute !important;
+				width: 1px !important;
+				white-space: nowrap !important;
+			}
 		</style>
 		<link
 			href="https://fonts.googleapis.com/css?family=Roboto:400,700"
@@ -368,39 +381,44 @@
 					/>
 				</div>
 				<div class="bio-wrapper">
-					<h1 class="bio-wrapper__name">Tyler Tadej</h1>
-					<h3 class="bio-wrapper__title">Software Developer</h3>
-					<p class="bio-wrapper__description">
-						Hi... I'm Tyler, a computer programmer, two-wheel enthusiast, disc
-						golfer, and
-						<a href="https://www.mezcalreviews.com">mezcal nerd</a> among other
-						things. I've been fascinated with technology since first playing
-						SimAnt on a Macintosh SE/30 in the early 90s. I currently write code
-						at <a href="https://www.atlassian.com">Atlassian</a>.
-					</p>
-					<div class="link-wrapper">
+          <main>
+            <h1 class="bio-wrapper__name">Tyler Tadej</h1>
+            <h3 class="bio-wrapper__title">Software Developer</h3>
+            <p class="bio-wrapper__description">
+              Hi... I'm Tyler, a computer programmer, two-wheel enthusiast, disc
+              golfer, and
+              <a href="https://www.mezcalreviews.com">mezcal nerd</a> among other
+              things. I've been fascinated with technology since first playing
+              SimAnt on a Macintosh SE/30 in the early 90s. I currently write code
+              at <a href="https://www.atlassian.com">Atlassian</a>.
+            </p>
+          </main>
+					<footer class="link-wrapper">
 						<a
 							href="https://github.com/tylertadej"
 							rel="noopener noreferrer"
 							target="_blank"
 							class="btn-social btn-outline"
-							><i class="fa fa-fw fa-github"></i
-						></a>
+							><i class="fa fa-fw fa-github" aria-hidden="true"></i
+						><span class="sr-only">Visit the Github page for Tyler Tadej</span>
+						</a>
 						<a
 							href="https://linkedin.com/in/tylertadej/"
 							rel="noopener noreferrer"
 							target="_blank"
 							class="btn-social btn-outline"
-							><i class="fa fa-fw fa-linkedin"></i
-						></a>
+							><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i
+						><span class="sr-only">Visit the LinkedIn page for Tyler Tadej</span>
+						</a>
 						<a
 							href="https://www.instagram.com/tylertadej/"
 							rel="noopener noreferrer"
 							target="_blank"
 							class="btn-social btn-outline"
-							><i class="fa fa-fw fa-instagram"></i
-						></a>
-					</div>
+							><i class="fa fa-fw fa-instagram" aria-hidden="true"></i
+						><span class="sr-only">Visit the Instagram profile for Tyler Tadej</span>
+						</a>
+					</footer>
 				</div>
 			</div>
 		</div>
